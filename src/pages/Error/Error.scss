@@ -1,0 +1,22 @@
+#error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    color: #FF6060;
+}
+#error__title{
+    font-size: 120px;
+    margin: 0;
+    color: #FF6060;
+}
+.error__content a{
+    color: #FF6060;
+}
+
+@media screen and (max-width: 800px) {
+    #error{
+        height: 65vh;
+    }
+}

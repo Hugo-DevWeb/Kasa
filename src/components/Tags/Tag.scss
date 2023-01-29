@@ -1,0 +1,31 @@
+.tags{
+    background-color: #FF6060;
+    color: white;
+    width: 150px;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 17px;
+    text-align: center;
+}
+ul.tagList{
+    display: flex;
+    gap: 25px;
+    margin: 32px 0 10px;
+    padding: 0;
+    width: 70%;
+}
+@media screen and (max-width: 800px) {
+    .tagList{
+        gap: 8px !important;
+        width: 100% !important;
+        margin: 0px;
+        flex-wrap: wrap;
+        
+    }
+    .tags{
+        width: max-content;
+        border-radius: 7px;
+        font-size: 10px;
+
+    }
+}

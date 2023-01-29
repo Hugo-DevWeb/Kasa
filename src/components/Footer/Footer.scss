@@ -1,0 +1,22 @@
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    & img{
+        width: 150px;
+        filter: grayscale(1) brightness(6.5);
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    footer{
+        margin-top: 25px;
+    }
+    
+}
