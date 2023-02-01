@@ -1,5 +1,5 @@
 // import TagList from 
-import DropdownMedium from "../../Dropdown/Medium/DropdownMedium";
+import Dropdown from "../../Dropdown/Test/Dropdown";
 import Images from "../../Images/Images";
 import accomodationsList from "../../../assets/accomodation.json";
 import Rating from "../../Rating/Rating";
@@ -36,8 +36,8 @@ function SingleProduct(props) {
                 </div>
             </div>
             <div className="drop__group">
-                <DropdownMedium name="Description" index={accomodation.id}/>
-                <DropdownMedium name="Équipements" index={accomodation.id}/>
+                <Dropdown name="Description" index={accomodation.id}/>
+                <Dropdown name="Équipements" index={accomodation.id}/>
             </div>
         </section>
     )

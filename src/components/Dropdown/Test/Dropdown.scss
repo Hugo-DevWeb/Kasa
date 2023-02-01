@@ -49,6 +49,9 @@
 .openArrow {
     rotate: 360deg;
 }
+.drop__container--medium{
+    width: 40vw;
+}
 
 @media screen and (max-width: 800px) {
     .drop__container{
@@ -148,6 +151,9 @@
         gap: 18px;
         margin-top: 20px;
 
+    }
+    .drop__container--medium{
+        width: 89vw;
     }
     .drop__bloc{
         width: 98%;

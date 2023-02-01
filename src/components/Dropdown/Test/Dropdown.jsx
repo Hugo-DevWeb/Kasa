@@ -12,7 +12,7 @@ function Dropdown(props) {
   let content = props.type === "Large"  ? aboutContent.find(c => c.name === props.title) : accomodationsList.find(accomodation => accomodation.id === props.index);
 
   return (
-    <div className="drop__container">
+    <div className={`${props.type === "Large" ? "drop__container" : "drop__container--medium"}`}>
       <div className={`${props.type === "Large" ? "dropdown__large" : "dropdown__medium"}`}>
         <div className={`${props.type === "Large" ? "dropdown__large--text" : "dropdown__medium--text"}`}>
           <button onClick={() => setIsOpen(!isOpen)}>
