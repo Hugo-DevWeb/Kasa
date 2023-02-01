@@ -12,6 +12,7 @@
         height: inherit;
         background: rgba(0, 0, 0, 0.25);
         width: -webkit-fill-available;
+        width: -moz-available;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -40,7 +41,7 @@
     #home__banner{
         margin: 7px auto;
         width: 90%;
-        height: 189px;
+        height: 139px;
         overflow: hidden;
         &--title{
             font-size: 37px;

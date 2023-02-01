@@ -8,6 +8,7 @@ import "../../../assets/font.scss";
 function DropdownMedium({name, index}) {
   const [isOpen, setIsOpen] = useState(false);
   let accomodation = accomodationsList.find(accomodation => accomodation.id === index);
+  
   return (
     <>
       { name === "Description" ? (

@@ -16,7 +16,7 @@ function Banner(props) {
 
   return (
     <div {...bannerProps}>
-      <h1 id="home__banner--title">Chez vous,{device < 800 ? <br/> : null}partout et ailleurs</h1>
+      <h1 id="home__banner--title">Chez vous,{device < 800 ? <br/> : null} partout et ailleurs</h1>
     </div>
   );
 }

@@ -1,16 +1,16 @@
 import Banner from "../../components/Banner/Banner";
 import Header from "../../components/Header/Header";
-import DropdownLarge from "../../components/Dropdown/Large/DropdownLarge";
+import Dropdown from "../../components/Dropdown/Test/Dropdown";
+import aboutContent from "../../assets/about.json"
 
 function About() {
     return(
         <div>
             <Header />
             <Banner />
-            <DropdownLarge title="Fiabilité"/>
-            <DropdownLarge title="Respect" />
-            <DropdownLarge title="Service" />
-            <DropdownLarge title="Sécurité" />
+            {aboutContent.map((content, index) => (
+               <Dropdown type="Large"  key={index} title={content.name} content={content.content} />
+            ))}
         </div>
     )
 }

@@ -26,6 +26,10 @@ const root = createBrowserRouter([
     path: "/logement/:id",
     element: <Accomodation />,
     errorElement: <ErrorPage />,
+  },
+  {
+    path: "/404",
+    element: <ErrorPage />
   }
 ]);
 

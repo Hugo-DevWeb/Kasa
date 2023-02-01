@@ -6,9 +6,14 @@ import Rating from "../../Rating/Rating";
 import "./SingleProduct.scss";
 import TagList from "../../Tags/TagList";
 import "../../../assets/font.scss";
+import { Navigate } from "react-router-dom";
 
 function SingleProduct(props) {
+
     let accomodation = accomodationsList.find(accomodation => accomodation.id === props.index)
+    if(!accomodation){
+        return <Navigate to="/404" />
+    }
     return(
         <section>
             <Images index={accomodation.id}/>

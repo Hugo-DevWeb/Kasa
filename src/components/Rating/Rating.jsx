@@ -14,9 +14,9 @@ function Rating(props){
     let imgs = [];
     for (let i = 0; i < 5; i++){
         if(i + 1 <= ratingValue){
-            imgs.push(<img src={activeStar} alt='icone etoile' />)
+            imgs.push(<img key={i} src={activeStar} alt='icone etoile' />)
         } else {
-            imgs.push(<img src={greyStar} alt='icone etoile' />);
+            imgs.push(<img key={i} src={greyStar} alt='icone etoile' />);
         }
     } 
     
